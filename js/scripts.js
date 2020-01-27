@@ -52,9 +52,8 @@ $(document).ready(function(){
       userTask.changeComplete();
       if (userTask.completed) {
         $(`label[for='${userTask.id}']`).addClass("strikethrough");
-        console.log(userTask.id)
       } else {
-
+        $(`label[for='${userTask.id}']`).removeClass("strikethrough");
       }
     });
 
